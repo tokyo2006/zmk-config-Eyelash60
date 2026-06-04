@@ -79,7 +79,7 @@
 &trans          &trans        &trans        &trans        &trans        &trans        &trans  &trans    &trans    &trans
             >;
 
-            label = "CONF";
+            label = "Conf";
         };
     };
 };
