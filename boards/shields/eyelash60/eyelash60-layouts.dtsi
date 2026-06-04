@@ -1,7 +1,7 @@
 #include <physical_layouts.dtsi>
 
 / {
-    625uspace_layout: 625uspace_layout {
+    space625u_layout: space625u_layout {
         compatible = "zmk,physical-layout";
         display-name = "6.25U Space";
         transform = <&default_transform>;
@@ -70,7 +70,7 @@
             ;
     };
 
-    3uspace_layout: 3uspace_layout {
+    space3u_layout: space3u_layout {
         compatible = "zmk,physical-layout";
         display-name = "3U Space";
         transform = <&default_transform>;
