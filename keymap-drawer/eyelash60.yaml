@@ -57,7 +57,7 @@ layers:
   - {t: '`', h: '$$mdi:apple-keyboard-control$$', s: '~'}
   - $$mdi:apple-keyboard-option$$
   - LGUI
-  - CONF
+  - Conf
   - $$mdi:keyboard-space$$
   - $$mdi:backspace-reverse-outline$$
   - {t: '$$mdi:arrow-left-bold$$', h: '$$mdi:apple-keyboard-option$$'}
@@ -128,7 +128,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
-  CONF:
+  Conf:
   - '&studio_unlock'
   - {h: '1', s: '$$mdi:bluetooth-connect$$'}
   - {h: '2', s: '$$mdi:bluetooth-connect$$'}
