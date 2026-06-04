@@ -1,7 +1,7 @@
 #include <physical_layouts.dtsi>
 
 / {
-    space3u_layout: space3u_layout {
+    eyelash60_layout: eyelash60_layout {
         compatible = "zmk,physical-layout";
         display-name = "3U Space";
         transform = <&default_transform>;

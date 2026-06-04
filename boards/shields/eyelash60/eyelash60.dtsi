@@ -8,7 +8,7 @@
 / {
     chosen {
         zmk,kscan = &kscan0;
-        zmk,physical-layout = &space3u_layout;
+        zmk,physical-layout = &eyelash60_layout;
     };
 
     default_transform: keymap_transform_0 {
