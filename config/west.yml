@@ -45,7 +45,21 @@ manifest:
     - name: zmk-module-settings-rpc
       remote: cormoran
       revision: main
-    - name: zmk-module-runtime-input-processor
+    - name: zmk-feature-runtime-macro
+      remote: cormoran
+      revision: main
+      import: true
+    - name: zmk-feature-runtime-combo
+      remote: cormoran
+      revision: main
+      import: true
+    - name: zmk-feature-input-stream
+      remote: cormoran
+      revision: main
+    - name: zmk-feature-custom-settings
+      remote: cormoran
+      revision: main
+    - name: zmk-feature-fast-keymap
       remote: cormoran
       revision: main
 
