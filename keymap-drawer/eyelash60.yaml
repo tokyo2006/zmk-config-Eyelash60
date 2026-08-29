@@ -1,6 +1,6 @@
 layout: {zmk_keyboard: eyelash60}
 layers:
-  Qwery:
+  Qwerty:
   - $$mdi:keyboard-esc$$
   - {t: '1', s: '!'}
   - {t: '2', s: '@'}
