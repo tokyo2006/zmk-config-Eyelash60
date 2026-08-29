@@ -1,0 +1,31 @@
+#include "eyelash60.dtsi"
+#include <behaviors/battery_history_request.dtsi>
+
+/ {
+    chosen {
+        zmk,kscan = &mock_kscan;
+        zephyr,display = &oled;
+    };
+
+    mock_kscan: kscan_1 {
+        compatible = "zmk,kscan-mock";
+        columns = <0>;
+        rows = <0>;
+        events = <0>;
+    };
+};
+
+/* The nice_nano board already wires i2c0 to P0.17 (SDA) / P0.20 (SCL) and
+ * provides the i2c0_default/i2c0_sleep pinctrl nodes, so we only enable the
+ * bus and add the OLED child node here. */
+&i2c0 {
+    status = "okay";
+
+    oled: sh1106@3c {
+        compatible = "sinowealth,sh1106";
+        reg = <0x3c>;
+        width = <128>;
+        height = <64>;
+        segment-offset = <2>;
+    };
+};

@@ -9,3 +9,6 @@ features:
 outputs:
   - usb
   - ble
+siblings:
+  - eyelash60_dongle
+  - eyelash60_peripheral

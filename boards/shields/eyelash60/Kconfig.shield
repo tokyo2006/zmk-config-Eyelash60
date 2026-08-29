@@ -1,5 +1,8 @@
 # Copyright (c) 2020 The ZMK Contributors
 # SPDX-License-Identifier: MIT
 
-config SHIELD_EYELASH60
-    def_bool $(shields_list_contains,eyelash60)
+config SHIELD_EYELASH60_DONGLE
+    def_bool $(shields_list_contains,eyelash60_dongle)
+
+config SHIELD_EYELASH60_PERIPHERAL
+    def_bool $(shields_list_contains,eyelash60_peripheral)

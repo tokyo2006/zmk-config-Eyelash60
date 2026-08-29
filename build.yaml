@@ -13,11 +13,19 @@
 #
 ---
 include:
-  # eyelash60
+  # Dongle (central) + OLED status screen
   - board: nice_nano//zmk
-    shield: eyelash60
+    shield: eyelash60_dongle dongle_display
     snippet: studio-rpc-usb-uart
     cmake-args: -DCONFIG_ZMK_STUDIO=y -DCONFIG_ZMK_STUDIO_LOCKING=n
-    artifact-name: eyelash60
+    artifact-name: eyelash60_dongle
+
+  # Peripheral (the keyboard half)
+  - board: nice_nano//zmk
+    shield: eyelash60_peripheral
+    artifact-name: eyelash60_peripheral
+
+  # Settings reset
   - board: nice_nano//zmk
     shield: settings_reset
+    artifact-name: settings_reset
