@@ -1,14 +1,41 @@
 manifest:
-  defaults:
-    revision: main
   remotes:
     - name: cormoran
       url-base: https://github.com/cormoran
+    - name: zmkfirmware
+      url-base: https://github.com/zmkfirmware
   projects:
     - name: zmk
       remote: cormoran
-      revision: v0.3-branch+dya
+      revision: main+dya
       import: app/west.yml
+      clone-depth: 1
+    - name: zephyr
+      remote: cormoran
+      revision: v4.1.0+zmk-fixes+nrf-half-duplex-uart
+      clone-depth: 1
+      import:
+        name-blocklist:
+          - ci-tools
+          - hal_altera
+          - hal_cypress
+          - hal_infineon
+          - hal_microchip
+          - hal_nxp
+          - hal_openisa
+          - hal_xtensa
+          - hal_st
+          - hal_ti
+          - loramac-node
+          - mcuboot
+          - mcumgr
+          - net-tools
+          - openthread
+          - edtt
+          - trusted-firmware-m
+          - chre
+
+    # DYA Studio feature modules
     - name: zmk-module-ble-management
       remote: cormoran
       revision: main
@@ -18,8 +45,23 @@ manifest:
     - name: zmk-module-settings-rpc
       remote: cormoran
       revision: main
-    - name: zmk-module-runtime-input-processor
+    - name: zmk-feature-runtime-macro
       remote: cormoran
       revision: main
+      import: true
+    - name: zmk-feature-runtime-combo
+      remote: cormoran
+      revision: main
+      import: true
+    - name: zmk-feature-input-stream
+      remote: cormoran
+      revision: main
+    - name: zmk-feature-custom-settings
+      remote: cormoran
+      revision: main
+    - name: zmk-feature-fast-keymap
+      remote: cormoran
+      revision: main
+
   self:
     path: config
